@@ -129,8 +129,6 @@ while True:
 	elif n == 6:
 		customer_data()
 	elif n == 7:
-		myquery2 = {"item_id": "1"}
-		item.delete_many(myquery2)
 		break
 	else:
 		print("enter a valid no")
