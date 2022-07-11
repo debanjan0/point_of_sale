@@ -1,6 +1,18 @@
-import pymongo
-from datetime import date
-from tabulate import tabulate
+import os
+
+try:
+    from tabulate import tabulate
+except ModuleNotFoundError:
+    os.system("pip install tabulate")
+    from tabulate import tabulate
+
+try:
+    import pymongo
+except ModuleNotFoundError:
+    os.system("pip install pymongo")
+    import pymongo
+
+
 
 '''
 Create a account in mongodb and paste the connection in your_url_and_password
